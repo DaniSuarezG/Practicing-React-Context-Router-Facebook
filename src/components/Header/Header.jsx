@@ -8,19 +8,17 @@ import { useNavigate } from 'react-router-dom'
 function Header() {
 
   const { searchInput, setSearchInput } = useContext(searchContext)
-  const [ input, setInput ] = useState('')
+  // const [ input, setInput ] = useState('')
   const navigate = useNavigate()
 
-  function handleChange(event) {
-    setInput(event.target.value)
-  }
+  // function handleChange(event) {
+  //   setInput(event.target.value)
+  // }
 
   function handleKeyDown(event) {
 
-    console.log(event.code)
-
     if (event.code === 'Enter') {
-      setSearchInput(input)
+      setSearchInput(event.target.value)
       console.log('OK')
       return navigate('/friends')
     }
@@ -35,7 +33,7 @@ function Header() {
             type="text" 
             id='search' 
             placeholder='Search' 
-            onChange={ handleChange }
+            // onChange={ handleChange }
             onKeyDown={ handleKeyDown }/>
         </div>
       </div>
