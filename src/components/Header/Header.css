@@ -1,0 +1,45 @@
+.header {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: #1c1e21;
+    border-bottom: 0.5px solid grey;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.title {
+    margin: 0;
+    line-height: 56px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1877F2;
+}
+
+.search-wrapper {
+    margin-left: 10px;
+}
+
+#search {
+    height: 36px;
+    width: 200px;
+    border: 0;
+    border-radius: 18px;
+}
+
+.avatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: grey;
+    text-align: center;
+    line-height: 36px;
+}
